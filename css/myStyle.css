@@ -2,27 +2,55 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
+/* header */
 header{
     background-color:#e0d5d5;
+    display: grid;
+    grid-template-areas: 'nav img' 
+                        'ha ha';
+    padding: 30px;
 }
+
 nav{
-    background-color: azure;
+    grid-area: nav;
+    display: block;
+    align-content: center;
 }
+header img{
+    grid-area: img;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li{
+    margin:0 50px;
+}
+h1{ display: block;
+    grid-area: ha;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e26060;
+}
+/* main */
 main{
     background-color: bisque;
     font-size: 20px;
 }
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-box img{
+    
+    width: 25%;
+    margin: 20px;
+}
 footer{
-    background-color: blueviolet;
-}
-li{
-    display: inline;
-    width: 10px;
-}
-h1{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: #e26060;
+    background-color: rgb(159, 146, 172);
 }
 p{
     line-height: 40px;
